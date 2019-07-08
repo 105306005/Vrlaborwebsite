@@ -92,7 +92,7 @@ else if(isset($_POST['name']) && isset($_POST['school']) && isset($_POST['accoun
      <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
-<body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
+<body style="font-family: 微軟正黑體; background-image: url(img/background.png)">
 
   <!-- ==========================================nav-bar==================================================-->
   <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->

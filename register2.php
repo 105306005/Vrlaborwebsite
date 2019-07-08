@@ -85,7 +85,7 @@ else if(isset($_POST['name']) && isset($_POST['school']) && isset($_POST['accoun
   <link rel="stylesheet" type="text/css" href="styles/register_css/normalize.css">
 
 </head>
-<body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
+<body style="font-family: 微軟正黑體; background-image: url(img/background.png)">
   <div class="htmleaf-container">
     <div class="demo">
             <div class="container">

@@ -21,6 +21,7 @@ include("pdoInc.php");
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
 <!--======================== function style============================= -->
 
      <style>
@@ -56,11 +57,26 @@ include("pdoInc.php");
      #Oslo {background-color:orange;}
      #Taiwan {background-color: pink;}
      </style>
+
+
+     <style>
+        .carousel-indicators {
+            bottom: -52px;  }
+        .carousel-indicators li {
+            background-color: #000f23; }
+        .card-body {
+            margin: 0.5rem; }
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            /* height: 100%; */ }
+    </style>
+
 <!--======================== //function style============================= -->
 
 
 </head>
-<body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
+<body style="font-family: 微軟正黑體; background-image: url(img/background.png)">
 
 <!-- ==========================================nav-bar==================================================-->
   <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
@@ -126,16 +142,33 @@ include("pdoInc.php");
     </nav>
 <!-- =========================//nav-bar======================================-->
 
-
-<div class="container">
+<div class="container text-center">
   <br><br><br>
-  <h3>Functions</h3>
-  <p>Use</p>
-  <p>Tip</p>
+  <h3>VR Chemical Laboratory二大功能</h3>
+  <br>
+  <div id='mapView' class="row">
+    <div class="col-sm-6">
+      <a href="#lab-mode"><img src="img/lab-mode.png" style="height:200px; margin:0px 5px;" onmouseover="this.src='img/lab-mode_hover.png'" onmouseleave="this.src='img/lab-mode.png'"></a>
+      <h5>化學實驗室模式</h5>
+    </div>
+    <div class="col-sm-6">
+      <a href="#molecule-mode"><img src="img/molecule-mode.png" style="height:200px; margin:0px 5px;" onmouseover="this.src='img/molecule-mode_hover.png'" onmouseleave="this.src='img/molecule-mode.png'"></a>
+      <h5>微觀分子模式</h5>
+    </div>
+  </div>
+  <div>
+    <p>為什麼會分為兩個模式呢？</p>
+    <p>因為</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+  </div>
 </div>
 
 <!-- ==========================try=========================-->
-<div class="container">
+<!-- <div class="container">
   <div id="London" class="tabcontent">
     <h1>London</h1>
     <p>London is the capital city of England.</p>
@@ -194,9 +227,66 @@ include("pdoInc.php");
   document.getElementById("defaultOpen").click();
   </script>
 
-</div>
+</div> -->
 <!-- ==========================//try=========================-->
 
+<!-- =================================lab-mode================================= -->
+<div class="container text-center" id="lab-mode">
+  <h3>化學實驗室模式</h3>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<!-- ==============================molecule-mode================================= -->
+<div class="container text-center" id="molecule-mode">
+  <h3>微觀分子模式</h3>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<!-- ==============================molecule-mode================================= -->
+<div class="container text-center" id="key-tech">
+  <h3>關鍵技術</h3>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<!-- ==============================future================================= -->
+<div class="container text-center" id="future">
+  <h3>未來展望</h3>
+
+</div>
+
+<!-- ==============================Carousel Example================================= -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/future1.png" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/future2.png" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/future3.png" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+<!-- ==============================//Carousel Example================================= -->
 
 <!-- ===========================contact us bar==========================-->
 <!-- Live Chat Widget powered by https://keyreply.com/chat/ -->

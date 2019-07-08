@@ -30,7 +30,7 @@ include("pdoInc.php");
         crossorigin=""></script>
 
 </head>
-<body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
+<body style="font-family: 微軟正黑體; background-image: url(img/background.png)">
 
   <!-- ==========================================nav-bar==================================================-->
   <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
@@ -97,47 +97,53 @@ include("pdoInc.php");
   <!-- ==========================================nav-bar==================================================-->
 
 
-<div class="container" id="a">
+<div class="container text-center" id="index-motivation">
   <br><br><br>
   <h3>發想動機</h3>
-  <div id='mapView' class="row">
+  <br>
+  <div class="row">
     <div class="col-sm-4">
-      <img src="img/a.png">
-      <!-- <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top"> -->
-      <p>原本的化學實驗 搬進虛擬實驗室？</p>
+      <img src="img/motivation1.png" height="170px">
+      <br><br><br>
+      <h6>原本的化學實驗<br>搬進虛擬實驗室？</h6>
     </div>
     <div class="col-sm-4">
-      <p>書本的知識怎麼以 更有趣的方式呈現？</p>
+      <img src="img/motivation2.png" height="170px">
+      <br><br><br>
+      <h6>書本的知識怎麼以<br>更有趣的方式呈現？</h6>
     </div>
     <div class="col-sm-4">
-      <p>如何與看不到的 分子模型進行互動？</p>
+      <img src="img/motivation3.png" height="170px">
+      <br><br><br>
+      <h6>如何與看不到的<br>分子模型進行互動？</h6>
     </div>
-  <br><br><br><br><br><br><br><br><br>
 </div>
 
-<div class="container" id="b">
-  <br><br><br><br><br><br><br><br><br><br><br><br>
-  <h3>Indexb</h3>
+<div class="container text-center" id="index-situation">
+  <br><br><br>
+  <h3>現況</h3>
   <p>hi</p>
   <p>hi</p>
+  <br><br><br><br><br><br><br><br><br><br><br>
 </div>
 
 
-<div class="container" id="c">
+<div class="container text-center" id="index-unity">
+  <h3>開發環境 - Unity3D</h3>
+  <img src="img/ee.png" height="370px">
+  <p>hi</p>
+  <p>hi</p>
   <br><br><br><br><br><br><br><br><br><br><br><br>
-  <h3>Indexc</h3>
-  <p>hi</p>
-  <p>hi</p>
 </div>
 
 <!-- ===========================team==============================-->
-<div class="container" id="team">
+<div class="container text-center" id="team">
   <!-- 參考https://www.w3schools.com/howto/howto_js_tab_header.asp -->
   <!-- 備用參考網址：http://www.htmleaf.com/jQuery/Accordion/201802234987.html -->
+  <h3>開發團隊</h3>
+  <p>hi</p>
+  <p>hi</p>
   <br><br><br><br><br><br><br><br><br><br><br><br>
-  <h3>團隊資訊</h3>
-  <p>hi</p>
-  <p>hi</p>
 <!-- =================================try================================= -->
 
 

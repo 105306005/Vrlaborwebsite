@@ -22,7 +22,7 @@ include("pdoInc.php");
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
-<body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
+<body style="font-family: 微軟正黑體; background-image: url(img/background.png)">
 
 <!-- ==========================================nav-bar==================================================-->
 <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
