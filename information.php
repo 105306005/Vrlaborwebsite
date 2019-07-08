@@ -64,9 +64,6 @@ include("pdoInc.php");
             <a class="dropdown-item" href="information.php#c-part">c</a>
           </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="register.php">註冊</a>
-        </li>
 
       </ul>
      <!--  <form class="form-inline my-2 my-lg-0">
@@ -74,13 +71,27 @@ include("pdoInc.php");
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
         </button>
       </form> -->
+      <ul class="navbar-nav ml-auto" >
+     <?php
+         if(isset($_SESSION['account']) && $_SESSION['account'] != null){ //登入狀態
+             //修改會員資料
+             echo '<a href="member_info.php"><img src="img/profile.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/profile_hover.png\'" onmouseleave="this.src=\'img/profile.png\'"></a>';
+             //會員登出
+             echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
+         }
+         else{  //登出狀態
+             echo '<li class="nav-item"><a href="register.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
+         }
+     ?>
+ </ul>
+
     </div>
   </nav>
 <!-- ==========================================nav-bar==================================================-->
 
 
 <div class="container">
-	<br><br><br>
+  <br><br><br>
   <h3>Informaitons</h3>
   <p>Use</p>
   <p>Tip: </p>

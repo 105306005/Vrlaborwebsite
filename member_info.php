@@ -207,7 +207,7 @@ else if(isset($_POST['name']) && isset($_POST['school']) && isset($_POST['accoun
 <!-- =============================會員註冊和登錄畫面============================================-->
 
 <div class="container">
-	<br><br><br>
+  <br><br><br>
   <h3>Register</h3>
   <p>hi</p>
   <p>hello.</p>

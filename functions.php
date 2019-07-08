@@ -21,10 +21,48 @@ include("pdoInc.php");
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+<!--======================== function style============================= -->
+
+     <style>
+     body {font-family: "Lato", sans-serif;}
+
+     .tablink {
+       background-color: #555;
+       color: white;
+       float: left;
+       border: none;
+       outline: none;
+       cursor: pointer;
+       padding: 14px 16px;
+       font-size: 17px;
+       width: 20%;  /* 分五個功能 */
+     }
+
+     .tablink:hover {
+       background-color: #777;
+     }
+
+     /* Style the tab content */
+     .tabcontent {
+       color: white;
+       display: none;
+       padding: 100px;
+       text-align: center;
+     }
+
+     #London {background-color:red;}
+     #Paris {background-color:green;}
+     #Tokyo {background-color:blue;}
+     #Oslo {background-color:orange;}
+     #Taiwan {background-color: pink;}
+     </style>
+<!--======================== //function style============================= -->
+
+
 </head>
 <body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
 
-  <!-- ==========================================nav-bar==================================================-->
+<!-- ==========================================nav-bar==================================================-->
   <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
   <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -64,30 +102,101 @@ include("pdoInc.php");
               <a class="dropdown-item" href="information.php#c-part">c</a>
             </div>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="register.php">註冊</a>
-          </li>
-
         </ul>
        <!--  <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
           </button>
         </form> -->
+        <ul class="navbar-nav ml-auto" >
+       <?php
+           if(isset($_SESSION['account']) && $_SESSION['account'] != null){ //登入狀態
+               //修改會員資料
+               // echo '<a href="member_info.php"><img src="img/profile.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/profile_hover.png\'" onmouseleave="this.src=\'img/profile.png\'"></a>';
+               //會員登出
+               echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
+           }
+           else{  //登出狀態
+               echo '<li class="nav-item"><a href="register.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
+           }
+       ?>
+   </ul>
+
       </div>
     </nav>
-  <!-- ==========================================nav-bar==================================================-->
-
-
-
+<!-- =========================//nav-bar======================================-->
 
 
 <div class="container">
-	<br><br><br>
+  <br><br><br>
   <h3>Functions</h3>
   <p>Use</p>
   <p>Tip</p>
 </div>
+
+<!-- ==========================try=========================-->
+<div class="container">
+  <div id="London" class="tabcontent">
+    <h1>London</h1>
+    <p>London is the capital city of England.</p>
+    <p>London is the capital city of England.</p>
+    <p>London is the capital city of England.</p>
+    <p>London is the capital city of England.</p>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <h1>Paris</h1>
+    <p>Paris is the capital of France.</p>
+    <p>Paris is the capital of France.</p>
+    <p>Paris is the capital of France.</p>
+
+  </div>
+
+  <div id="Tokyo" class="tabcontent">
+    <h1>Tokyo</h1>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="Oslo" class="tabcontent">
+    <h1>Oslo</h1>
+    <p>Oslo is the capital of Norway.</p>
+  </div>
+
+  <div id="Taiwan" class="tabcontent">
+    <h1>Taiwan</h1>
+    <p>Taiwan</p>
+  </div>
+
+  <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+  <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+  <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+  <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+  <button class="tablink" onclick="openCity('Taiwan', this, 'pink')">Taiwan</button>
+
+  <br><br><br><br><br><br>
+  <script>
+  function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+</div>
+<!-- ==========================//try=========================-->
+
 
 <!-- ===========================contact us bar==========================-->
 <!-- Live Chat Widget powered by https://keyreply.com/chat/ -->
@@ -95,6 +204,6 @@ include("pdoInc.php");
 <!-- data-align="left" -->
 <!-- data-overlay="true" -->
 <script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjIzMzMzMzMlMjIsJTIyZmFjZWJvb2slMjI6JTIyMzMzMzMzJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
-<!-- ===========================contact us bar==========================-->
+<!-- ===========================//contact us bar==========================-->
 </body>
 </html>

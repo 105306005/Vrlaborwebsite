@@ -134,9 +134,6 @@ else if(isset($_POST['name']) && isset($_POST['school']) && isset($_POST['accoun
               <a class="dropdown-item" href="information.php#c-part">c</a>
             </div>
           </li>
-          <li class="nav-item">
-              <a class="nav-link active" href="register.php">註冊</a>
-          </li>
 
         </ul>
        <!--  <form class="form-inline my-2 my-lg-0">
@@ -207,7 +204,7 @@ else if(isset($_POST['name']) && isset($_POST['school']) && isset($_POST['accoun
 <!-- =============================會員註冊和登錄畫面============================================-->
 
 <div class="container">
-	<br><br><br>
+  <br><br><br>
   <h3>Register</h3>
   <p>hi</p>
   <p>hello.</p>

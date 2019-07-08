@@ -29,46 +29,6 @@ include("pdoInc.php");
         integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
         crossorigin=""></script>
 
-
-
-<!--==================================== team style========================================== -->
-
-<style>
-body {font-family: "Lato", sans-serif;}
-
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 20%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 50px;
-  text-align: center;
-}
-
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
-</style>
-<!--==================================== team style========================================== -->
-
-
-
 </head>
 <body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
 
@@ -112,9 +72,6 @@ body {font-family: "Lato", sans-serif;}
               <a class="dropdown-item" href="information.php#c-part">c</a>
             </div>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="register.php">註冊</a>
-          </li>
 
         </ul>
        <!--  <form class="form-inline my-2 my-lg-0">
@@ -126,7 +83,7 @@ body {font-family: "Lato", sans-serif;}
        <?php
            if(isset($_SESSION['account']) && $_SESSION['account'] != null){ //登入狀態
                //修改會員資料
-               echo '<a href="member_info.php"><img src="img/profile.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/profile_hover.png\'" onmouseleave="this.src=\'img/profile.png\'"></a>';
+               // echo '<a href="member_info.php"><img src="img/profile.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/profile_hover.png\'" onmouseleave="this.src=\'img/profile.png\'"></a>';
                //會員登出
                echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
            }
@@ -141,15 +98,25 @@ body {font-family: "Lato", sans-serif;}
 
 
 <div class="container" id="a">
-	<br><br><br>
-  <h3>Indexa</h3>
-  <p>hi</p>
-  <p>hi</p>
+  <br><br><br>
+  <h3>發想動機</h3>
+  <div id='mapView' class="row">
+    <div class="col-sm-4">
+      <img src="img/a.png">
+      <!-- <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top"> -->
+      <p>原本的化學實驗 搬進虛擬實驗室？</p>
+    </div>
+    <div class="col-sm-4">
+      <p>書本的知識怎麼以 更有趣的方式呈現？</p>
+    </div>
+    <div class="col-sm-4">
+      <p>如何與看不到的 分子模型進行互動？</p>
+    </div>
   <br><br><br><br><br><br><br><br><br>
 </div>
 
 <div class="container" id="b">
-	<br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
   <h3>Indexb</h3>
   <p>hi</p>
   <p>hi</p>
@@ -157,7 +124,7 @@ body {font-family: "Lato", sans-serif;}
 
 
 <div class="container" id="c">
-	<br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
   <h3>Indexc</h3>
   <p>hi</p>
   <p>hi</p>
@@ -167,65 +134,21 @@ body {font-family: "Lato", sans-serif;}
 <div class="container" id="team">
   <!-- 參考https://www.w3schools.com/howto/howto_js_tab_header.asp -->
   <!-- 備用參考網址：http://www.htmleaf.com/jQuery/Accordion/201802234987.html -->
-	<br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
   <h3>團隊資訊</h3>
   <p>hi</p>
   <p>hi</p>
 <!-- =================================try================================= -->
 
-<div id="London" class="tabcontent">
-  <h1>London</h1>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h1>Paris</h1>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h1>Tokyo</h1>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="Oslo" class="tabcontent">
-  <h1>Oslo</h1>
-  <p>Oslo is the capital of Norway.</p>
-</div>
-
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
-
-<br><br><br><br><br><br>
-<script>
-function openCity(cityName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
 
 
 
-<!-- =================================try================================= -->
+
+<!-- =================================//try================================= -->
 
 </div>
 
-<!-- ===========================team==============================-->
+<!-- ===========================//team==============================-->
 <!-- ===========================map==========================-->
     <!-- 地圖map參考：https://leafletjs.com/examples/quick-start/
                     https://leafletjs.com/reference-1.4.0.html#map-example
@@ -244,12 +167,12 @@ document.getElementById("defaultOpen").click();
           }).addTo(map);
 
           var redIcon = new L.Icon({
-             	iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-             	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-             	iconSize: [25, 41],
-             	iconAnchor: [12, 41],
-             	popupAnchor: [1, -34],
-             	shadowSize: [41, 41]
+              iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              shadowSize: [41, 41]
           });
 
           L.marker([24.986771, 121.576697], {icon: redIcon})
@@ -261,15 +184,13 @@ document.getElementById("defaultOpen").click();
       </div>
       <div class="col-sm-2"></div>
 </div>
-<!-- ===========================map==========================-->
-
-
+<!-- ===========================//map==========================-->
 <!-- ===========================contact us bar==========================-->
 <!-- Live Chat Widget powered by https://keyreply.com/chat/ -->
 <!-- Advanced options: -->
 <!-- data-align="left" -->
 <!-- data-overlay="true" -->
 <script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjIzMzMzMzMlMjIsJTIyZmFjZWJvb2slMjI6JTIyMzMzMzMzJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
-<!-- ===========================contact us bar==========================-->
+<!-- ===========================//contact us bar==========================-->
 </body>
 </html>

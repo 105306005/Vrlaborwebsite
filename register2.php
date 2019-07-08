@@ -75,41 +75,41 @@ else if(isset($_POST['name']) && isset($_POST['school']) && isset($_POST['accoun
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>VR LAB</title>
+  <title>VR LAB</title>
   <!-- 老bootstrap注意不能和新版混用，會跑掉 -->
-	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <!-- font-awesome -->
-	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <!-- css -->
-	<link rel="stylesheet" type="text/css" href="styles/register_css/htmleaf-demo.css">
+  <link rel="stylesheet" type="text/css" href="styles/register_css/htmleaf-demo.css">
   <link rel="stylesheet" type="text/css" href="styles/register_css/normalize.css">
 
 </head>
 <body style="font-family: 微軟正黑體; background-image: url(img/background_img.png)">
-	<div class="htmleaf-container">
-		<div class="demo">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-md-offset-3 col-md-6" >
+  <div class="htmleaf-container">
+    <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6" >
                       <!-- 加上一些透明的部分，方便看-->
-		                    <div class="tab" role="tabpanel">
-		                        <!-- Nav tabs -->
-		                        <ul class="nav nav-tabs" role="tablist">
+                        <div class="tab" role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
                                 <!-- 加上一些透明的部分，方便看-->
-		                            <li role="presentation" class="active"><a href="#login" aria-controls="home" role="tab" data-toggle="tab" style="background-color: rgb(255,255,255,0.5);"><span id="icon-center"><i class="fa fa-globe"></i></span> 登入會員 </a></li>
-		                            <li role="presentation"><a href="#join" aria-controls="profile" role="tab" data-toggle="tab" style="background-color: rgb(255,255,255,0.5);"><span><i class="fa fa-rocket" id="icon-center"></i></span> 註冊會員 </a></li>
-		                        </ul>
-		                        <!-- Tab panes -->
-		                        <div class="tab-content tabs" style="background-color: rgb(255,255,255,0.5);">
-		                            <div role="tabpanel" class="tab-pane fade in active" id="login">
+                                <li role="presentation" class="active"><a href="#login" aria-controls="home" role="tab" data-toggle="tab" style="background-color: rgb(255,255,255,0.5);"><span id="icon-center"><i class="fa fa-globe"></i></span> 登入會員 </a></li>
+                                <li role="presentation"><a href="#join" aria-controls="profile" role="tab" data-toggle="tab" style="background-color: rgb(255,255,255,0.5);"><span><i class="fa fa-rocket" id="icon-center"></i></span> 註冊會員 </a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content tabs" style="background-color: rgb(255,255,255,0.5);">
+                                <div role="tabpanel" class="tab-pane fade in active" id="login">
                                     <h3>登入會員</h3>
                                     <form action="register.php" method="post">
                                       帳號：<input type="text" name="login_account" class="form-control"><br>
                                       密碼：<input type="text" name="login_password" class="form-control"><br><br>
                                       <input type="submit" class="btn btn-warning">
                                     </form>
-		                            </div>
-		                            <div role="tabpanel" class="tab-pane fade" id="join">
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="join">
                                     <h3>註冊會員</h3>
                                     <form action="register.php" method="post">
                                       姓名：<input type="text" name="name" class="form-control"><br>
@@ -119,18 +119,18 @@ else if(isset($_POST['name']) && isset($_POST['school']) && isset($_POST['accoun
                                       密碼：<input type="password" name="password" class="form-control" placeholder="限大小寫英文字母及數字" pattern="[A-Za-z0-9]+"><br><br>
                                       <input type="submit" class="btn btn-warning">
                                   </form>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-	</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
 
-	<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-	<script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  
+  <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 </html>
