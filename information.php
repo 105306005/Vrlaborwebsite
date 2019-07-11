@@ -27,7 +27,8 @@ include("pdoInc.php");
 <!-- ==========================================nav-bar==================================================-->
 <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
 <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- bg-dark -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #002E5F;">
     <!-- .navbar-brand 左上LOGO位置 -->
     <a class="navbar-brand" href="index.php">
       <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -80,7 +81,7 @@ include("pdoInc.php");
              echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
          }
          else{  //登出狀態
-             echo '<li class="nav-item"><a href="register.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
+             echo '<li class="nav-item"><a href="member.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
          }
      ?>
  </ul>
@@ -124,7 +125,7 @@ include("pdoInc.php");
 <!-- Advanced options: -->
 <!-- data-align="left" -->
 <!-- data-overlay="true" -->
-<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjIzMzMzMzMlMjIsJTIyZmFjZWJvb2slMjI6JTIyMzMzMzMzJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
+<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjJAOTM0ZnJtcWwlMjIsJTIyZmFjZWJvb2slMjI6JTIyZGRkJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
 <!-- ===========================contact us bar==========================-->
 </body>
 </html>

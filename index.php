@@ -11,7 +11,7 @@ include("pdoInc.php");
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- css -->
-    <!-- <link rel="stylesheet" type="text/css" href="styles/chatroom.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/team.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap-expand.css">
     <!-- js -->
@@ -21,21 +21,24 @@ include("pdoInc.php");
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <!-- leaflet map api -->
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     <!-- Font awesome-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- leaflet map api -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
         integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
         crossorigin=""/>
-      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
         integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
         crossorigin=""></script>
 
 </head>
-<body style="font-family: 微軟正黑體; background-image: url(img/background.png)">
+<body style="font-family: 微軟正黑體 ; background-image: url(img/background.png)">
 
   <!-- ==========================================nav-bar==================================================-->
   <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
   <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- bg-dark -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #002E5F;">
       <!-- .navbar-brand 左上LOGO位置 -->
       <a class="navbar-brand" href="index.php">
         <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -88,40 +91,63 @@ include("pdoInc.php");
                echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
            }
            else{  //登出狀態
-               echo '<li class="nav-item"><a href="register.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
+               echo '<li class="nav-item"><a href="member.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
            }
        ?>
    </ul>
       </div>
     </nav>
   <!-- ==========================================nav-bar==================================================-->
-
+  <div class="container text-center">
+    <br><br><br>
+    <div class="row">
+      <div class="col-12 col-xl-6 p-2">
+        <div class="w-50 mx-auto">
+          <img src="img/logo.png" class="img-fluid"></div>
+          <div class="p-4">
+            <h1>VR Chemistry Lab</h1>
+            <!-- <div class="subTitle-top font-weight-bold padding-word">
+                          這是一個...
+            </div> -->
+            <h5>這是一個...</h5>
+            <a href="#index-motivation" class="m-2 btn btn-green btn-round">瞭解更多</a>
+          </div>
+      </div>
+      <div class="col-12 col-xl-6">
+        <div style="width: 80%; margin: auto;">
+          <img src="img/motivation3.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="container text-center" id="index-motivation">
   <br><br><br>
-  <h3>發想動機</h3>
+  <h2>發想動機</h2>
   <br>
   <div class="row">
     <div class="col-sm-4">
       <img src="img/motivation1.png" height="170px">
-      <br><br><br>
+      <br><br>
       <h6>原本的化學實驗<br>搬進虛擬實驗室？</h6>
     </div>
     <div class="col-sm-4">
       <img src="img/motivation2.png" height="170px">
-      <br><br><br>
+      <br><br>
       <h6>書本的知識怎麼以<br>更有趣的方式呈現？</h6>
     </div>
     <div class="col-sm-4">
       <img src="img/motivation3.png" height="170px">
-      <br><br><br>
+      <br><br>
       <h6>如何與看不到的<br>分子模型進行互動？</h6>
     </div>
+  </div>
 </div>
 
 <div class="container text-center" id="index-situation">
   <br><br><br>
-  <h3>現況</h3>
+  <h2>現況</h2>
+  <br>
   <p>hi</p>
   <p>hi</p>
   <br><br><br><br><br><br><br><br><br><br><br>
@@ -129,30 +155,89 @@ include("pdoInc.php");
 
 
 <div class="container text-center" id="index-unity">
-  <h3>開發環境 - Unity3D</h3>
-  <img src="img/ee.png" height="370px">
-  <p>hi</p>
-  <p>hi</p>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2>開發環境 - Unity3D</h2>
+  <br>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="img/vive.jpg" height="200px">
+      <h5>Unity</h5>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/vive.jpg" height="200px">
+      <h5>HTC Vive</h5>
+    </div>
+  </div>
+  <br><br>
 </div>
 
 <!-- ===========================team==============================-->
-<div class="container text-center" id="team">
-  <!-- 參考https://www.w3schools.com/howto/howto_js_tab_header.asp -->
+<!-- <div class="container text-center" id="team"> -->
   <!-- 備用參考網址：http://www.htmleaf.com/jQuery/Accordion/201802234987.html -->
-  <h3>開發團隊</h3>
-  <p>hi</p>
-  <p>hi</p>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
-<!-- =================================try================================= -->
+<div class="team-section container text-center">
+  <div class="inner-width">
+    <h2>團隊</h2>
+    <br>
+    <div class="pers">
+      <div class="pe">
+        <img src="img/team-member1.png" alt="">
+        <div class="p-name">Name1</div>
+        <div class="p-des">Designer</div>
+        <div class="p-sm">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
+      <div class="pe">
+        <img src="img/team-member2.png" alt="">
+        <div class="p-name">Name2</div>
+        <div class="p-des">Designer</div>
+        <div class="p-sm">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
+      <div class="pe">
+        <img src="img/team-member3.png" alt="">
+        <div class="p-name">Name3</div>
+        <div class="p-des">Developer</div>
+        <div class="p-sm">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
+      <div class="pe">
+        <img src="img/team-member4.png" alt="">
+        <div class="p-name">Name4</div>
+        <div class="p-des">Developer</div>
+        <div class="p-sm">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
+      <div class="pe">
+        <img src="img/team-member5.png" alt="">
+        <div class="p-name">Name5</div>
+        <div class="p-des">Developer</div>
+        <div class="p-sm">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
-<!-- =================================//try================================= -->
+    </div>
 
+  </div>
 </div>
+<!-- </div> -->
 
 <!-- ===========================//team==============================-->
 <!-- ===========================map==========================-->
@@ -196,7 +281,7 @@ include("pdoInc.php");
 <!-- Advanced options: -->
 <!-- data-align="left" -->
 <!-- data-overlay="true" -->
-<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjIzMzMzMzMlMjIsJTIyZmFjZWJvb2slMjI6JTIyMzMzMzMzJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
+<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjJAOTM0ZnJtcWwlMjIsJTIyZmFjZWJvb2slMjI6JTIyZGRkJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
 <!-- ===========================//contact us bar==========================-->
 </body>
 </html>

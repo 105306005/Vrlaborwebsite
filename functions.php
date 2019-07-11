@@ -13,6 +13,11 @@ include("pdoInc.php");
     <!-- css -->
    <!--     <link rel="stylesheet" type="text/css" href="styles/chatroom.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/key-tech.css">
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!-- <script src="https://kit.fontawesome.com/f1ad151ad9.js"></script> -->
+<!-- <script src="https://use.fontawesome.com/releases/v5.0.0/js/solid.js"></script> -->
     <!-- js -->
    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -81,7 +86,8 @@ include("pdoInc.php");
 <!-- ==========================================nav-bar==================================================-->
   <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
   <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- bg-dark -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #002E5F;">
       <!-- .navbar-brand 左上LOGO位置 -->
       <a class="navbar-brand" href="index.php">
         <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -133,7 +139,7 @@ include("pdoInc.php");
                echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
            }
            else{  //登出狀態
-               echo '<li class="nav-item"><a href="register.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
+               echo '<li class="nav-item"><a href="member.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
            }
        ?>
    </ul>
@@ -144,26 +150,27 @@ include("pdoInc.php");
 
 <div class="container text-center">
   <br><br><br>
-  <h3>VR Chemical Laboratory二大功能</h3>
+  <h2>VR Chemical Laboratory二大功能</h2>
   <br>
   <div id='mapView' class="row">
     <div class="col-sm-6">
       <a href="#lab-mode"><img src="img/lab-mode.png" style="height:200px; margin:0px 5px;" onmouseover="this.src='img/lab-mode_hover.png'" onmouseleave="this.src='img/lab-mode.png'"></a>
-      <h5>化學實驗室模式</h5>
+      <h4>化學實驗室模式</h4>
     </div>
     <div class="col-sm-6">
       <a href="#molecule-mode"><img src="img/molecule-mode.png" style="height:200px; margin:0px 5px;" onmouseover="this.src='img/molecule-mode_hover.png'" onmouseleave="this.src='img/molecule-mode.png'"></a>
-      <h5>微觀分子模式</h5>
+      <h4>微觀分子模式</h4>
     </div>
   </div>
   <div>
-    <p>為什麼會分為兩個模式呢？</p>
-    <p>因為</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
+    <br>
+    <h6>為什麼會分為兩個模式呢？</h6>
+    <h6>因為</h6>
+    <h6>...</h6>
+    <h6>...</h6>
+    <h6>...</h6>
+    <h6>...</h6>
+    <h6>...</h6>
   </div>
 </div>
 
@@ -242,10 +249,67 @@ include("pdoInc.php");
 </div>
 
 <!-- ==============================molecule-mode================================= -->
-<div class="container text-center" id="key-tech">
-  <h3>關鍵技術</h3>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
+<!-- <div class="container text-center" id="key-tech"> -->
+  <!-- Services section -->
+  <section id="advantage" class="padding-top padding-bottom text-center">
+    <div class="container">
+      <h3>關鍵技術</h3>
+      <div class="row services justify-content-around">
+        <div class="col-lg-2 col-md-2 col-sm-4">
+          <div class="service" data-animated="300">
+            <div class="popup">
+              建模建模建模建模建模建模建模建模建模建模建模建模
+            </div>
+            <div class="circle"><i class="fa fa-home"></i></div>
+            <h5>建模</h5>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4">
+          <div class="service" data-animated="900">
+            <div class="popup">
+              虛擬環境瞬間移動虛擬環境瞬間移動虛擬環境瞬間移動</div>
+            <div class="circle"><i class="fa fa-walking"></i></div>
+            <!-- <i class="fas fa-running"></i> -->
+            <h5>虛擬環境瞬間移動</h5>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4">
+          <div class="service" data-animated="1200">
+            <div class="popup">
+              輕觸產生原子輕觸產生原子輕觸產生原子輕觸產生原子</div>
+            <div class="circle"><i class="fa fa-hand-paper"></i></div>
+            <h5>輕觸產生原子</h5>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4">
+          <div class="service" data-animated="2100">
+            <div class="popup">
+             雷射指標雷射指標雷射指標雷射指標</div>
+            <div class="circle"><i class="fa fa-share-alt"></i></div>
+            <h5>雷射指標</h5>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4">
+          <div class="service" data-animated="2400">
+            <div class="popup">
+              元素合成化合物元素合成化合物元素合成化合物</div>
+            <div class="circle"><i class="fa fa-atom"></i></div>
+            <h5>元素合成化合物</h5>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4">
+          <div class="service" data-animated="3000">
+            <div class="popup">
+              化學反應特效化學反應特效化學反應特效</div>
+            <div class="circle"><i class="fa fa-fire"></i></i></div>
+            <h5>化學反應特效</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br>
+<!-- </div> -->
 
 <!-- ==============================future================================= -->
 <div class="container text-center" id="future">
@@ -266,13 +330,13 @@ include("pdoInc.php");
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/future1.png" alt="Los Angeles" width="1100" height="500">
+      <img src="img/future1.png" alt="Los Angeles" width="50%" height="100%">
     </div>
     <div class="carousel-item">
-      <img src="img/future2.png" alt="Chicago" width="1100" height="500">
+      <img src="img/future1.png" alt="Chicago" height="70%">
     </div>
     <div class="carousel-item">
-      <img src="img/future3.png" alt="New York" width="1100" height="500">
+      <img src="img/future1.png" alt="New York" width="50%">
     </div>
   </div>
 
@@ -293,7 +357,7 @@ include("pdoInc.php");
 <!-- Advanced options: -->
 <!-- data-align="left" -->
 <!-- data-overlay="true" -->
-<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjIzMzMzMzMlMjIsJTIyZmFjZWJvb2slMjI6JTIyMzMzMzMzJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
+<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#9C27B0" data-apps="JTdCJTIybGluZSUyMjolMjJAOTM0ZnJtcWwlMjIsJTIyZmFjZWJvb2slMjI6JTIyZGRkJTIyLCUyMmVtYWlsJTIyOiUyMm5jY3VtaXN2cmxhYkBnbWFpbC5jb20lMjIlN0Q="></script>
 <!-- ===========================//contact us bar==========================-->
 </body>
 </html>
