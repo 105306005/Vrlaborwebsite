@@ -101,19 +101,19 @@ include("pdoInc.php");
   <div class="container text-center">
     <br><br><br>
     <div class="row">
-      <div class="col-12 col-xl-6 p-2">
+      <div class="col-12 col-xl-12 p-2">
         <div class="w-50 mx-auto">
-          <img src="img/logo.png" class="img-fluid"></div>
+          <!--<img src="img/logo.png" class="img-fluid"></div> -->
           <div class="p-4">
             <h1>VR Chemistry Lab</h1>
             <!-- <div class="subTitle-top font-weight-bold padding-word">
                           這是一個...
             </div> -->
-            <h5>這是一個...</h5>
-            <a href="#index-motivation" class="m-2 btn btn-green btn-round">瞭解更多</a>
+            <h5>Learn Chemistry by VR</h5>
+            <a href="#index-motivation" class="m-2 btn btn-green btn-round">More info</a>
           </div>
       </div>
-      <div class="col-12 col-xl-6">
+      <div class="col-12 col-xl-12">
         <div style="width: 80%; margin: auto;">
           <img src="img/motivation3.png" alt="" class="img-fluid">
         </div>
