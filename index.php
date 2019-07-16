@@ -98,19 +98,19 @@ include("pdoInc.php");
       </div>
     </nav>
   <!-- ==========================================nav-bar==================================================-->
-  <div class="container text-center">
+  <div class="text-center" style="background-color:#002E5F;">
     <br><br><br>
     <div class="row">
       <div class="col-12 col-xl-12 p-2">
         <div class="w-50 mx-auto">
           <!--<img src="img/logo.png" class="img-fluid"></div> -->
           <div class="p-4">
-            <h1>VR Chemistry Lab</h1>
+            <h1 style="color:white">VR Chemistry Lab</h1>
             <!-- <div class="subTitle-top font-weight-bold padding-word">
                           這是一個...
             </div> -->
-            <h5>Learn Chemistry by VR</h5>
-            <a href="#index-motivation" class="m-2 btn btn-green btn-round">More info</a>
+            <h5 style="color:white">Learn Chemistry by VR</h5>
+            <a href="#index-motivation" class="m-2 btn btn-green btn-round" style="color:white">More info</a>
           </div>
       </div>
       <div class="col-12 col-xl-12">
@@ -120,6 +120,7 @@ include("pdoInc.php");
       </div>
     </div>
   </div>
+</div>
 
 <div class="container text-center" id="index-motivation">
   <br><br><br>
@@ -127,19 +128,25 @@ include("pdoInc.php");
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <img src="img/motivation1.png" height="170px">
-      <br><br>
-      <h6>原本的化學實驗<br>搬進虛擬實驗室？</h6>
+      <div class="enlarge">
+        <img src="img/motivation1.png" height="170px">
+        <br><br>
+        <h6>原本的化學實驗<br>搬進虛擬實驗室？</h6>
+      </div>
     </div>
     <div class="col-sm-4">
-      <img src="img/motivation2.png" height="170px">
-      <br><br>
-      <h6>書本的知識怎麼以<br>更有趣的方式呈現？</h6>
+      <div class="enlarge">
+        <img src="img/motivation2.png" height="170px">
+        <br><br>
+        <h6>書本的知識怎麼以<br>更有趣的方式呈現？</h6>
+      </div>
     </div>
     <div class="col-sm-4">
-      <img src="img/motivation3.png" height="170px">
-      <br><br>
-      <h6>如何與看不到的<br>分子模型進行互動？</h6>
+      <div class="enlarge">
+        <img src="img/motivation3.png" height="170px">
+        <br><br>
+        <h6>如何與看不到的<br>分子模型進行互動？</h6>
+      </div>
     </div>
   </div>
 </div>
@@ -155,16 +162,20 @@ include("pdoInc.php");
 
 
 <div class="container text-center" id="index-unity">
-  <h2>開發環境 - Unity3D</h2>
+  <h2>開發環境</h2>
   <br>
   <div class="row">
     <div class="col-sm-6">
-      <img src="img/vive.jpg" height="200px">
-      <h5>Unity</h5>
+      <div class="enlarge">
+        <img src="img/unity.png" height="200px">
+        <h5>Unity</h5>
+      </div>
     </div>
     <div class="col-sm-6">
-      <img src="img/vive.jpg" height="200px">
-      <h5>HTC Vive</h5>
+      <div class="enlarge">
+        <img src="img/vive.png" height="200px">
+        <h5>HTC Vive</h5>
+      </div>
     </div>
   </div>
   <br><br>

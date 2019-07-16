@@ -171,6 +171,8 @@ include("pdoInc.php");
     <h6>...</h6>
     <h6>...</h6>
     <h6>...</h6>
+    <h6>...</h6>
+    <h6>...</h6>
   </div>
 </div>
 
@@ -293,7 +295,7 @@ include("pdoInc.php");
           <div class="service" data-animated="2400">
             <div class="popup">
               元素合成化合物元素合成化合物元素合成化合物</div>
-            <div class="circle"><i class="fa fa-atom"></i></div>
+            <div class="circle"><i class="fa fa-dna"></i></div>
             <h5>元素合成化合物</h5>
           </div>
         </div>
@@ -301,7 +303,8 @@ include("pdoInc.php");
           <div class="service" data-animated="3000">
             <div class="popup">
               化學反應特效化學反應特效化學反應特效</div>
-            <div class="circle"><i class="fa fa-fire"></i></i></div>
+            <div class="circle"><i class="fa fa-fire"></i></div>
+            <!-- <i class="fab fa-hotjar"></i> -->
             <h5>化學反應特效</h5>
           </div>
         </div>
