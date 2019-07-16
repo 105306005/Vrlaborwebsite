@@ -34,70 +34,72 @@ include("pdoInc.php");
 </head>
 <body style="font-family: 微軟正黑體 ; background-image: url(img/background.png)">
 
-  <!-- ==========================================nav-bar==================================================-->
-  <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
-  <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
-  <!-- bg-dark -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #002E5F;">
-      <!-- .navbar-brand 左上LOGO位置 -->
-      <a class="navbar-brand" href="index.php">
-        <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span class="h3 mx-1">VR Chemistry Lab</span>
-      </a>
-      <!-- .navbar-toggler 漢堡式選單按鈕 -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- .navbar-toggler-icon 漢堡式選單Icon -->
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- ==========================================nav-bar==================================================-->
+<!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
+<!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
+<!-- bg-dark -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #002E5F;">
+    <!-- .navbar-brand 左上LOGO位置 -->
+    <a class="navbar-brand" href="index.php">
+      <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <span class="h3 mx-1">VR Chemistry Lab</span>
+    </a>
+    <!-- .navbar-toggler 漢堡式選單按鈕 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
-      <!-- 選單項目&漢堡式折疊選單 -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <!-- active表示當前頁面 -->
-          <li class="nav-item">
-            <a class="nav-link active" href="index.php">首頁<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="functions.php">功能簡介</a>
-          </li>
-          <!-- disable 訂死的選單 -->
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li> -->
-          <!-- .dropdown Navbar選項使用下拉式選單 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="information.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">相關資訊</a>
-            <!-- .dropdown-menu 下拉選單內容 -->
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="information.php#a-part">a</a>
-              <a class="dropdown-item" href="information.php#b-part">b</a>
-              <a class="dropdown-item" href="information.php#c-part">c</a>
-            </div>
-          </li>
+    <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+    <!-- 選單項目&漢堡式折疊選單 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- active表示當前頁面 -->
+        <li class="nav-item">
+          <a class="nav-link active" href="index.php">首頁<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="functions.php">功能簡介</a>
+        </li>
+        <!-- disable 訂死的選單 -->
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
+        <!-- .dropdown Navbar選項使用下拉式選單 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="information.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">相關資訊</a>
+          <!-- .dropdown-menu 下拉選單內容 -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="information.php#a-part">a</a>
+            <a class="dropdown-item" href="information.php#b-part">b</a>
+            <a class="dropdown-item" href="information.php#c-part">c</a>
+          </div>
+        </li>
 
-        </ul>
-       <!--  <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
-          </button>
-        </form> -->
-        <ul class="navbar-nav ml-auto" >
-       <?php
-           if(isset($_SESSION['account']) && $_SESSION['account'] != null){ //登入狀態
-               //修改會員資料
-               // echo '<a href="member_info.php"><img src="img/profile.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/profile_hover.png\'" onmouseleave="this.src=\'img/profile.png\'"></a>';
-               //會員登出
-               echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
-           }
-           else{  //登出狀態
-               echo '<li class="nav-item"><a href="member.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
-           }
-       ?>
-   </ul>
-      </div>
-    </nav>
-  <!-- ==========================================nav-bar==================================================-->
+      </ul>
+     <!--  <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
+        </button>
+      </form> -->
+      <ul class="navbar-nav ml-auto" >
+     <?php
+         if(isset($_SESSION['account']) && $_SESSION['account'] != null){ //登入狀態
+             //修改會員資料
+             echo '<a href="member_info.php"><img src="img/profile.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/profile_hover.png\'" onmouseleave="this.src=\'img/profile.png\'"></a>';
+             //會員登出
+             echo '<li class="nav-item"><a href="php_sess_logout.php"><img src="img/logout.png" style="height:32px; margin:0px 5px;" onmouseover="this.src=\'img/logout_hover.png\'" onmouseleave="this.src=\'img/logout.png\'" onclick="<?php echo \'<meta http-equiv=REFRESH CONTENT=0;url=index.php>\';?>"></a></li>';
+         }
+         else{  //登出狀態
+             echo '<li class="nav-item"><a href="member.php"><img src="img/login.png" style="height:32px;" onmouseover="this.src=\'img/login_hover.png\'" onmouseleave="this.src=\'img/login.png\'"></a></li>';
+         }
+     ?>
+ </ul>
+    </div>
+  </nav>
+<!-- ==========================================nav-bar==================================================-->
+
+<!-- ======================landing-page==================================================-->
   <div class="text-center" style="background-color:#002E5F;">
     <br><br><br>
     <div class="row">
@@ -121,6 +123,75 @@ include("pdoInc.php");
     </div>
   </div>
 </div>
+<!-- ======================//landing-page==================================================-->
+<!-- ======================landing-page-try==================================================-->
+<!-- <header id="home" class="hero-area">
+   <div class="overlay">
+     <span></span>
+     <span></span>
+   </div>
+   <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+     <div class="container">
+       <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="lni-menu"></i>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+         <ul class="navbar-nav mr-auto w-100 justify-content-end">
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#home">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#services">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#features">Services</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#showcase">Showcase</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#team">Team</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#blog">Blog</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link page-scroll" href="#contact">Contact</a>
+           </li>
+           <li class="nav-item">
+             <a class="btn btn-singin" href="#">Download</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+   <div class="container">
+     <div class="row space-100">
+       <div class="col-lg-6 col-md-12 col-xs-12">
+         <div class="contents">
+           <h2 class="head-title">Handcrafted Web Template <br>For Business and Startups</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab <br>dolores ea fugiat nesciunt quisquam.</p>
+           <div class="header-button">
+             <a href="#" class="btn btn-border-filled">Get Started</a>
+             <a href="#contact" class="btn btn-border page-scroll">Contact Us</a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-6 col-md-12 col-xs-12 p-0">
+         <div class="intro-img">
+           <img src="img/breaker.svg" alt="">
+         </div>
+       </div>
+     </div>
+   </div>
+ </header> -->
+ <!-- Header Section End -->
+
+<!-- ======================//landing-page-try==================================================-->
 
 <div class="container text-center" id="index-motivation">
   <br><br><br>
@@ -256,37 +327,115 @@ include("pdoInc.php");
                     https://leafletjs.com/reference-1.4.0.html#map-example
                     https://noob.tw/openstreetmap/ -->
 
-<div class="container-fluid">
-  <div id='mapView' class="row">
-    <div class="col-sm-2"></div>
-    <div id="mapid" class="col-sm-8" style="height: 250px; width: 100%; z-index: 10;">     <!-- 初始化設定地圖的寬和高 -->
-    <script type="text/javascript">
+<!-- <div class="container-fluid"> -->
 
-          var map = L.map('mapid').setView([24.987567, 121.576072], 17);  //setView (初始化經緯度中心點，縮放大小)
-
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          }).addTo(map);
-
-          var redIcon = new L.Icon({
-              iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-              iconSize: [25, 41],
-              iconAnchor: [12, 41],
-              popupAnchor: [1, -34],
-              shadowSize: [41, 41]
-          });
-
-          L.marker([24.986771, 121.576697], {icon: redIcon})
-            .bindPopup('<strong>VR Chemistry Lab</strong><br>台北市文山區指南路二段64號<br>政治大學商學院5樓先進排程實驗室')
-            .openPopup()
-            .addTo(map);
-
-      </script>
-      </div>
-      <div class="col-sm-2"></div>
-</div>
 <!-- ===========================//map==========================-->
+<!-- ===========================footer==========================-->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <!-- Footer Area Start -->
+      <section id="footer-Content">
+        <div class="container">
+          <!-- Start Row -->
+          <div class="row">
+
+          <!-- Start Col -->
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+
+              <div class="footer-logo">
+               <img src="img/log" >
+              </div>
+            </div>
+             <!-- End Col -->
+              <!-- Start Col -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Company</h3>
+                <ul class="menu"  style="list-style-type:none">
+                  <li><a href="#">- About Us</a></li>
+                  <li><a href="#">- Career</a></li>
+                  <li><a href="#">- Blog</a></li>
+                  <li><a href="#">- Press</a></li>
+                </ul>
+              </div>
+            </div>
+             <!-- End Col -->
+              <!-- Start Col -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Download App</h3>
+                <ul class="menu" style="list-style-type:none">
+                  <li><a href="#">- Android App</a></li>
+                  <li><a href="#">- IOS App</a></li>
+                  <li><a href="#">- Windows App</a></li>
+                  <li><a href="#">- Play Store</a></li>
+                  <li><a href="#">- IOS Store</a></li>
+                </ul>
+              </div>
+            </div>
+              </div>
+             <!-- End Col -->
+             <div class="row">
+               <div class="col-sm-1"></div>
+               <div id='mapView' class="col-sm-10">
+                  <div id="mapid" style="height: 250px; width: 100%; z-index: 10;">     <!-- 初始化設定地圖的寬和高 -->
+                      <script type="text/javascript">
+
+                          var map = L.map('mapid').setView([24.987567, 121.576072], 17);  //setView (初始化經緯度中心點，縮放大小)
+
+                          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                          }).addTo(map);
+
+                          var redIcon = new L.Icon({
+                              iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                              iconSize: [25, 41],
+                              iconAnchor: [12, 41],
+                              popupAnchor: [1, -34],
+                              shadowSize: [41, 41]
+                          });
+
+                          L.marker([24.986771, 121.576697], {icon: redIcon})
+                            .bindPopup('<strong>VR Chemistry Lab</strong><br>台北市文山區指南路二段64號<br>政治大學商學院5樓先進排程實驗室')
+                            .openPopup()
+                            .addTo(map);
+                      </script>
+                   </div>
+                </div>
+                <div class="col-sm-1"></div>
+             </div>
+
+
+
+
+          <!-- End Row -->
+        </div>
+        <!-- Copyright Start  -->
+
+        <div class="copyright">
+          <div class="container">
+            <!-- Star Row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="site-info text-center">
+                  <p>Crafted by <a href="" rel="nofollow">PHILA SOFA</a></p>
+                </div>
+
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+      <!-- Copyright End -->
+      </section>
+      <!-- Footer area End -->
+    </footer>
+    <!-- Footer Section End -->
+<!-- ===========================//footer==========================-->
+
 <!-- ===========================contact us bar==========================-->
 <!-- Live Chat Widget powered by https://keyreply.com/chat/ -->
 <!-- Advanced options: -->
