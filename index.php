@@ -32,7 +32,8 @@ include("pdoInc.php");
         crossorigin=""></script>
 
 </head>
-<body style="font-family: 微軟正黑體 ; background-image: url(img/background.png)">
+<!-- <body style="font-family: 微軟正黑體 ; background-image: url(img/background.png)"> -->
+<body bgcolor="#cccccc" style="font-family: 微軟正黑體">
 
 <!-- ==========================================nav-bar==================================================-->
 <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
@@ -101,23 +102,23 @@ include("pdoInc.php");
 
 <!-- ======================landing-page==================================================-->
   <div class="text-center" style="background-color:#002E5F;">
-    <br><br><br>
-    <div class="row">
-      <div class="col-12 col-xl-12 p-2">
-        <div class="w-50 mx-auto">
+    <!-- <br><br><br> -->
+    <!-- <div class="row"> -->
+      <!-- <div class="col-12 col-xl-12 p-2"> -->
+        <!-- <div class="w-50 mx-auto"> -->
           <!--<img src="img/logo.png" class="img-fluid"></div> -->
-          <div class="p-4">
-            <h1 style="color:white">VR Chemistry Lab</h1>
+          <!-- <div class="p-4"> -->
+            <!-- <h1 style="color:white">VR Chemistry Lab</h1> -->
             <!-- <div class="subTitle-top font-weight-bold padding-word">
                           這是一個...
             </div> -->
-            <h5 style="color:white">Learn Chemistry by VR</h5>
-            <a href="#index-motivation" class="m-2 btn btn-green btn-round" style="color:white">More info</a>
-          </div>
-      </div>
-      <div class="col-12 col-xl-12">
-        <div style="width: 80%; margin: auto;">
-          <img src="img/motivation3.png" alt="" class="img-fluid">
+            <!-- <h5 style="color:white">Learn Chemistry by VR</h5> -->
+            <!-- <a href="#index-motivation" class="m-2 btn btn-green btn-round" style="color:white">More info</a> -->
+          <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="col-12 col-xl-12"> -->
+        <div style="width: 100%; margin: auto;">
+          <img src="img/logopage.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>

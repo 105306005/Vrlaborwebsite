@@ -8,8 +8,8 @@
 //本機用來連接MYSQL
 $db_server = "localhost"; //本機
 $db_user  = "root"; //最高權限的使用者
-// $db_passwd = ""; //預設無密碼
-$db_passwd = "0000"; //孫的密碼
+$db_passwd = ""; //預設無密碼
+// $db_passwd = "0000"; //孫的密碼
 $db_name  = "vrlab_database";    //Database的名字
 
 
