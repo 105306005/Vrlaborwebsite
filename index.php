@@ -33,17 +33,17 @@ include("pdoInc.php");
 
 </head>
 <!-- <body style="font-family: 微軟正黑體 ; background-image: url(img/background.png)"> -->
-<body bgcolor="#cccccc" style="font-family: 微軟正黑體">
+<body style=" font-family: 微軟正黑體 ; background-color: #040C1B ; color:white; ">
 
 <!-- ==========================================nav-bar==================================================-->
 <!--參考網址：https://ithelp.ithome.com.tw/articles/10192870-->
 <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
 <!-- bg-dark -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #002E5F;">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(18,37,68,0.9);">
     <!-- .navbar-brand 左上LOGO位置 -->
     <a class="navbar-brand" href="index.php">
-      <img src="img/beaker.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-      <span class="h3 mx-1">VR Chemistry Lab</span>
+      <img src="img/logo_green.png" width="50" height="30" class="d-inline-block align-top" alt="">
+      <span class="h3 mx-1"></span>
     </a>
     <!-- .navbar-toggler 漢堡式選單按鈕 -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,10 +57,10 @@ include("pdoInc.php");
       <ul class="navbar-nav mr-auto">
         <!-- active表示當前頁面 -->
         <li class="nav-item">
-          <a class="nav-link active" href="index.php">首頁<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="index.php">首頁 <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="functions.php">功能簡介</a>
+          <a class="nav-link" href="functions.php"> 功能簡介 </a>
         </li>
         <!-- disable 訂死的選單 -->
         <!-- <li class="nav-item">
@@ -68,7 +68,7 @@ include("pdoInc.php");
         </li> -->
         <!-- .dropdown Navbar選項使用下拉式選單 -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="information.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">相關資訊</a>
+          <a class="nav-link dropdown-toggle" href="information.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 相關資訊 </a>
           <!-- .dropdown-menu 下拉選單內容 -->
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="information.php#a-part">a</a>
@@ -99,10 +99,44 @@ include("pdoInc.php");
     </div>
   </nav>
 <!-- ==========================================nav-bar==================================================-->
+<!-- ==============================Carousel Example================================= -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/bgpage.png" alt="Los Angeles" width="100%" height="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/bgpage.png" alt="Chicago" height="100%" height="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/bgpage.png" alt="New York" width="100%">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+<!-- ==============================//Carousel Example================================= -->
 
 <!-- ======================landing-page==================================================-->
-  <div class="text-center" style="background-color:#002E5F;">
-    <!-- <br><br><br> -->
+  <!-- <div class="text-center" style="background-color:#002E5F;">
+    <br><br><br> -->
     <!-- <div class="row"> -->
       <!-- <div class="col-12 col-xl-12 p-2"> -->
         <!-- <div class="w-50 mx-auto"> -->
@@ -116,15 +150,15 @@ include("pdoInc.php");
             <!-- <a href="#index-motivation" class="m-2 btn btn-green btn-round" style="color:white">More info</a> -->
           <!-- </div> -->
       <!-- </div> -->
-      <!-- <div class="col-12 col-xl-12"> -->
+      <!-- <div class="col-12 col-xl-12">
         <div style="width: 100%; margin: auto;">
-          <img src="img/logopage.png" alt="" class="img-fluid">
+          <img src="img/bgpage.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- ======================//landing-page==================================================-->
+<!-- ======================//landing-page================================================== -->
 <!-- ======================landing-page-try==================================================-->
 <!-- <header id="home" class="hero-area">
    <div class="overlay">
@@ -196,35 +230,48 @@ include("pdoInc.php");
 
 <div class="container text-center" id="index-motivation">
   <br><br><br>
+
   <h2>發想動機</h2>
-  <br>
+  <br><br>
   <div class="row">
-    <div class="col-sm-4">
-      <div class="enlarge">
-        <img src="img/motivation1.png" height="170px">
-        <br><br>
-        <h6>原本的化學實驗<br>搬進虛擬實驗室？</h6>
+    <div class="col-sm-4" style="color:white;">
+      <div style="background-color:rgba(213, 216, 220, 0.2);padding:10px;border-radius:5px;">
+        <div class="enlarge">
+          <br>
+          <img src="img/motivation1.png" height="140px">
+          <br><br>
+          <h6>原本的化學實驗<br>搬進虛擬實驗室？</h6>
+          <br>
+        </div>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="enlarge">
-        <img src="img/motivation2.png" height="170px">
-        <br><br>
-        <h6>書本的知識怎麼以<br>更有趣的方式呈現？</h6>
+      <div style="background-color:rgba(213, 216, 220, 0.2);padding:10px;border-radius:5px;">
+        <div class="enlarge">
+          <br>
+          <img src="img/motivation2.png" height="140px">
+          <br><br>
+          <h6>書本的知識怎麼以<br>更有趣的方式呈現？</h6>
+          <br>
+        </div>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="enlarge">
-        <img src="img/motivation3.png" height="170px">
-        <br><br>
-        <h6>如何與看不到的<br>分子模型進行互動？</h6>
+      <div style="background-color:rgba(213, 216, 220, 0.2);padding:10px;border-radius:5px;">
+        <div class="enlarge">
+          <br>
+          <img src="img/motivation3.png" height="140px">
+          <br><br>
+          <h6>如何與看不到的<br>分子模型進行互動？</h6>
+          <br>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <div class="container text-center" id="index-situation">
-  <br><br><br>
+  <br><br><br><br><br><br>
   <h2>現況</h2>
   <br>
   <p>hi</p>
