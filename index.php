@@ -228,42 +228,42 @@ include("pdoInc.php");
 
 <!-- ======================//landing-page-try==================================================-->
 
-<div class="container text-center" id="index-motivation">
+<div class="container" id="index-motivation">
   <br><br><br>
 
-  <h2>發想動機</h2>
+  <h2 class="index-title">發想動機</h2>
   <br><br>
   <div class="row">
-    <div class="col-sm-4" style="color:white;">
-      <div style="background-color:rgba(213, 216, 220, 0.2);padding:10px;border-radius:5px;">
+    <div class="col-sm-4"">
+      <div class="motivation_box">
         <div class="enlarge">
-          <br>
           <img src="img/motivation1.png" height="140px">
           <br><br>
-          <h6>原本的化學實驗<br>搬進虛擬實驗室？</h6>
+          <h4>原本的化學實驗搬進虛擬實驗室？</h4>
           <br>
+          <p>內容......................內容......................內容......................</p>
         </div>
       </div>
     </div>
     <div class="col-sm-4">
-      <div style="background-color:rgba(213, 216, 220, 0.2);padding:10px;border-radius:5px;">
+      <div class="motivation_box"">
         <div class="enlarge">
-          <br>
           <img src="img/motivation2.png" height="140px">
           <br><br>
-          <h6>書本的知識怎麼以<br>更有趣的方式呈現？</h6>
+          <h4>書本的知識怎麼以更有趣的方式呈現？</h4>
           <br>
+          <p>內容......................內容......................內容......................</p>
         </div>
       </div>
     </div>
     <div class="col-sm-4">
-      <div style="background-color:rgba(213, 216, 220, 0.2);padding:10px;border-radius:5px;">
+      <div class="motivation_box">
         <div class="enlarge">
-          <br>
           <img src="img/motivation3.png" height="140px">
           <br><br>
-          <h6>如何與看不到的<br>分子模型進行互動？</h6>
+          <h4>如何與看不到的分子模型進行互動？</h4>
           <br>
+          <p>內容......................內容......................內容......................</p>
         </div>
       </div>
     </div>
@@ -272,7 +272,7 @@ include("pdoInc.php");
 
 <div class="container text-center" id="index-situation">
   <br><br><br><br><br><br>
-  <h2>現況</h2>
+  <h2 class="index-title">現況</h2>
   <br>
   <p>hi</p>
   <p>hi</p>
@@ -281,7 +281,7 @@ include("pdoInc.php");
 
 
 <div class="container text-center" id="index-unity">
-  <h2>開發環境</h2>
+  <h2 class="index-title">開發環境</h2>
   <br>
   <div class="row">
     <div class="col-sm-6">
@@ -305,7 +305,7 @@ include("pdoInc.php");
   <!-- 備用參考網址：http://www.htmleaf.com/jQuery/Accordion/201802234987.html -->
 <div class="team-section container text-center">
   <div class="inner-width">
-    <h2>團隊</h2>
+    <h2 class="index-title">團隊</h2>
     <br>
     <div class="pers">
       <div class="pe">

@@ -29,6 +29,13 @@ body{
 }*/
 
 
+
+.index-title{
+  text-align:center; //置中
+}
+
+
+
 /* for motivation-part----------*/
 
 .enlarge{
@@ -38,6 +45,31 @@ body{
 .enlarge:hover{
   transform: scale(1.2);
 }
+
+.motivation_box{
+  background-color:black;
+  /*rgba最後的a代表alpha，是指透明度，設定的數值從0到1*/
+  /*padding-left:50px;*/
+  /*padding-right:50px;*/
+  padding:50px;
+  padding-top:30px;
+  padding-bottom:25px;
+  border-radius:10px;
+}
+
+#index-motivation p{
+  color: #47535B;
+
+}
+
+#index-motivation h4{
+  color: #BCBEC1;
+}
+
+
+
+
+
 /* //for motivation-part---------------------------------- */
 
 /* for Footer section---------------------------------- */
