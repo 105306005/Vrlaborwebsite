@@ -108,22 +108,26 @@ include("pdoInc.php");
           <a class="nav-link" href="index.php"> 首頁 </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="functions.php"> 功能簡介<span class="sr-only">(current) </span></a>
+          <a class="nav-link active" href="functions.php"> 功能簡介 <span class="sr-only">(current) </span></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="board.php"> 公告中心 </a>
         </li>
         <!-- disable 訂死的選單 -->
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#">Disabled</a>
         </li> -->
         <!-- .dropdown Navbar選項使用下拉式選單 -->
-        <li class="nav-item dropdown">
+
+    <!--     <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="information.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 相關資訊 </a>
-          <!-- .dropdown-menu 下拉選單內容 -->
+          .dropdown-menu 下拉選單內容
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="information.php#a-part">a</a>
             <a class="dropdown-item" href="information.php#b-part">b</a>
             <a class="dropdown-item" href="information.php#c-part">c</a>
           </div>
-        </li>
+        </li> -->
 
       </ul>
      <!--  <form class="form-inline my-2 my-lg-0">

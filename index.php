@@ -62,20 +62,24 @@ include("pdoInc.php");
         <li class="nav-item">
           <a class="nav-link" href="functions.php"> 功能簡介 </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="board.php"> 公告中心 </a>
+        </li>
         <!-- disable 訂死的選單 -->
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#">Disabled</a>
         </li> -->
         <!-- .dropdown Navbar選項使用下拉式選單 -->
-        <li class="nav-item dropdown">
+
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="information.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 相關資訊 </a>
-          <!-- .dropdown-menu 下拉選單內容 -->
+          .dropdown-menu 下拉選單內容
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="information.php#a-part">a</a>
             <a class="dropdown-item" href="information.php#b-part">b</a>
             <a class="dropdown-item" href="information.php#c-part">c</a>
           </div>
-        </li>
+        </li> -->
 
       </ul>
      <!--  <form class="form-inline my-2 my-lg-0">
@@ -112,13 +116,13 @@ include("pdoInc.php");
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/bgpage.png" alt="Los Angeles" width="100%" height="100%">
+      <img src="img/bgpage.png" alt="bgpage1" width="100%" height="100%">
     </div>
     <div class="carousel-item">
-      <img src="img/bgpage.png" alt="Chicago" height="100%" height="100%">
+      <img src="img/bgpage.png" alt="bgpage2" width="100%" height="100%">
     </div>
     <div class="carousel-item">
-      <img src="img/bgpage.png" alt="New York" width="100%">
+      <img src="img/bgpage.png" alt="bgpage3" width="100%" height="100%">
     </div>
   </div>
 
@@ -133,100 +137,7 @@ include("pdoInc.php");
 
 
 <!-- ==============================//Carousel Example================================= -->
-
-<!-- ======================landing-page==================================================-->
-  <!-- <div class="text-center" style="background-color:#002E5F;">
-    <br><br><br> -->
-    <!-- <div class="row"> -->
-      <!-- <div class="col-12 col-xl-12 p-2"> -->
-        <!-- <div class="w-50 mx-auto"> -->
-          <!--<img src="img/logo.png" class="img-fluid"></div> -->
-          <!-- <div class="p-4"> -->
-            <!-- <h1 style="color:white">VR Chemistry Lab</h1> -->
-            <!-- <div class="subTitle-top font-weight-bold padding-word">
-                          這是一個...
-            </div> -->
-            <!-- <h5 style="color:white">Learn Chemistry by VR</h5> -->
-            <!-- <a href="#index-motivation" class="m-2 btn btn-green btn-round" style="color:white">More info</a> -->
-          <!-- </div> -->
-      <!-- </div> -->
-      <!-- <div class="col-12 col-xl-12">
-        <div style="width: 100%; margin: auto;">
-          <img src="img/bgpage.png" alt="" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ======================//landing-page================================================== -->
-<!-- ======================landing-page-try==================================================-->
-<!-- <header id="home" class="hero-area">
-   <div class="overlay">
-     <span></span>
-     <span></span>
-   </div>
-   <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-     <div class="container">
-       <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt=""></a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-         <i class="lni-menu"></i>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarCollapse">
-         <ul class="navbar-nav mr-auto w-100 justify-content-end">
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#home">Home</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#services">About</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#features">Services</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#showcase">Showcase</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#team">Team</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#blog">Blog</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link page-scroll" href="#contact">Contact</a>
-           </li>
-           <li class="nav-item">
-             <a class="btn btn-singin" href="#">Download</a>
-           </li>
-         </ul>
-       </div>
-     </div>
-   </nav>
-   <div class="container">
-     <div class="row space-100">
-       <div class="col-lg-6 col-md-12 col-xs-12">
-         <div class="contents">
-           <h2 class="head-title">Handcrafted Web Template <br>For Business and Startups</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab <br>dolores ea fugiat nesciunt quisquam.</p>
-           <div class="header-button">
-             <a href="#" class="btn btn-border-filled">Get Started</a>
-             <a href="#contact" class="btn btn-border page-scroll">Contact Us</a>
-           </div>
-         </div>
-       </div>
-       <div class="col-lg-6 col-md-12 col-xs-12 p-0">
-         <div class="intro-img">
-           <img src="img/breaker.svg" alt="">
-         </div>
-       </div>
-     </div>
-   </div>
- </header> -->
- <!-- Header Section End -->
-
-<!-- ======================//landing-page-try==================================================-->
+<!-- ======================motivation====================== -->
 
 <div class="container" id="index-motivation">
   <br><br><br>
@@ -237,42 +148,60 @@ include("pdoInc.php");
     <div class="col-sm-4"">
       <div class="motivation_box">
         <div class="enlarge">
-          <img src="img/motivation1.png" height="140px">
+          <img src="img/motivation1.png" style="height: 35px">
           <br><br>
           <h4>原本的化學實驗搬進虛擬實驗室？</h4>
           <br>
-          <p>內容......................內容......................內容......................</p>
+          <p>內容........................................內容........................................內容........................................</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="motivation_box"">
+    <div class="col-sm-4"">
+      <div class="motivation_box">
         <div class="enlarge">
-          <img src="img/motivation2.png" height="140px">
+          <img src="img/motivation2.png" style="height: 35px">
           <br><br>
           <h4>書本的知識怎麼以更有趣的方式呈現？</h4>
           <br>
-          <p>內容......................內容......................內容......................</p>
+          <p>內容........................................內容........................................內容........................................</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4"">
       <div class="motivation_box">
         <div class="enlarge">
-          <img src="img/motivation3.png" height="140px">
+          <img src="img/motivation3.png" style="height: 35px">
           <br><br>
           <h4>如何與看不到的分子模型進行互動？</h4>
           <br>
-          <p>內容......................內容......................內容......................</p>
+          <p>內容........................................內容........................................內容........................................</p>
         </div>
       </div>
     </div>
+
+
+
   </div>
 </div>
-
+<!-- ======================//motivation====================== -->
+<!-- ======================situation====================== -->
 <div class="container text-center" id="index-situation">
   <br><br><br><br><br><br>
   <h2 class="index-title">現況</h2>
+  <div class="row">
+  </div>
+  <div class="row">
+
+  </div>
+  <div class="row">
+  </div>
+
+
+
+
+
+
+
   <br>
   <p>hi</p>
   <p>hi</p>
@@ -284,7 +213,7 @@ include("pdoInc.php");
   <h2 class="index-title">開發環境</h2>
   <br>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6" >
       <div class="enlarge">
         <img src="img/unity.png" height="200px">
         <h5>Unity</h5>
@@ -299,6 +228,8 @@ include("pdoInc.php");
   </div>
   <br><br>
 </div>
+
+<!-- ======================//situation====================== -->
 
 <!-- ===========================team==============================-->
 <!-- <div class="container text-center" id="team"> -->
@@ -387,12 +318,11 @@ include("pdoInc.php");
         <div class="container">
           <!-- Start Row -->
           <div class="row">
-
           <!-- Start Col -->
             <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-mb-12">
 
               <div class="footer-logo">
-               <img src="img/log" >
+               <img src="img/logo_1.png" >
               </div>
             </div>
              <!-- End Col -->
@@ -454,10 +384,6 @@ include("pdoInc.php");
                 </div>
                 <div class="col-sm-1"></div>
              </div>
-
-
-
-
           <!-- End Row -->
         </div>
         <!-- Copyright Start  -->

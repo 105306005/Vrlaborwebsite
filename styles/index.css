@@ -51,7 +51,7 @@ body{
   /*rgba最後的a代表alpha，是指透明度，設定的數值從0到1*/
   /*padding-left:50px;*/
   /*padding-right:50px;*/
-  padding:50px;
+  padding:60px;
   padding-top:30px;
   padding-bottom:25px;
   border-radius:10px;
@@ -66,7 +66,16 @@ body{
   color: #BCBEC1;
 }
 
+.circle_in_black{
 
+width:80px;
+height:80px; //正圓形，所以寬與高都設一樣
+
+border-radius:99em;
+
+background-color:black;
+
+}
 
 
 
