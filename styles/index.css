@@ -43,8 +43,10 @@ body{
 }
 
 .enlarge:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
+
+
 
 .motivation_box{
   background-color:black;
@@ -55,25 +57,22 @@ body{
   padding-top:30px;
   padding-bottom:25px;
   border-radius:10px;
+  height: 400px;
 }
 
-#index-motivation p{
-  color: #47535B;
-
+.big-title{
+  font-size: 60px;
 }
 
-#index-motivation h4{
-  color: #BCBEC1;
-}
+
 
 .circle_in_black{
-
-width:80px;
-height:80px; //正圓形，所以寬與高都設一樣
-
-border-radius:99em;
-
 background-color:black;
+width: 300px;
+height: 300px;
+border-radius:99px;
+position: center
+
 
 }
 

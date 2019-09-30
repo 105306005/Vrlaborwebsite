@@ -5,6 +5,7 @@ include("pdoInc.php");
 
 <html>
 <head>
+
     <title>VR LAB</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,7 @@ include("pdoInc.php");
     <link rel="stylesheet" type="text/css" href="styles/team.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap-expand.css">
+ 
     <!-- js -->
     <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -30,6 +32,7 @@ include("pdoInc.php");
      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
         integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
         crossorigin=""></script>
+
 
 </head>
 <!-- <body style="font-family: 微軟正黑體 ; background-image: url(img/background.png)"> -->
@@ -133,48 +136,86 @@ include("pdoInc.php");
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
+  
 </div>
 
-
 <!-- ==============================//Carousel Example================================= -->
-<!-- ======================motivation====================== -->
 
-<div class="container" id="index-motivation">
-  <br><br><br>
+<!-- ======================introduction====================== -->
+<div class="container" id="index-introduction" style = "background-image: url(img/bglight.png); background-position: center center ;
+ background-size: contain; background-repeat: no-repeat">
+	<br><br><br><br><br>
+	<div class="text-center big-title"> 革命，化學教育。 </div>
+	<br>
+	<h3 class="text-center index-title"> HTC Vive VR + 化學 + 教育 ＝ VR Chemistry Laboratory
+	</h3>
+	<br><br><br><br><br><br><br>
+	<!-- <div class="container"> -->
+</div>
+<div id="index-introduction-2" style="background:url(img/intro-1.png); background-position: center center ;background-size: 100%; height: 100%;  background-repeat: no-repeat">
+	<!-- <img src="img/intro-1.png" width="100%" height="100%" style= "text-align: center"> -->
+	<br><br>
+	<div style="color: #00cc99">
+    	<h3>&nbsp;&nbsp;&nbsp;&nbsp;特點1，利用VR設備進行化學實模擬</h3>
+    	
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
+<!-- ======================introduction====================== -->
+
+<!-- ======================motivation====================== -->
+<!-- style="background-image: url(img/bgdark-01.png)" -->
+
+<div class="container my-bg" id="index-motivation" style = "background-image: url(img/bglight.png); background-position: center center ;
+ background-size: contain; background-repeat: no-repeat" >
+ 
+  <br><br><br><br><br><br>
 
   <h2 class="index-title">發想動機</h2>
   <br><br>
-  <div class="row">
-    <div class="col-sm-4"">
+  <div class="row" style="color:#cccccc;">
+    <div class="col-sm-4">
       <div class="motivation_box">
         <div class="enlarge">
           <img src="img/motivation1.png" style="height: 35px">
           <br><br>
           <h4>原本的化學實驗搬進虛擬實驗室？</h4>
           <br>
-          <p>內容........................................內容........................................內容........................................</p>
+          <p style="color:#cccccc;">一個具有完善設備的實驗室建置成本、維護成本高昂，做化學實驗的過程更是不可逆的，一旦任何步驟出現問題，便需要重新來過，若能夠 建置出虛擬實境化學實驗室，其方便、過程可逆、成本相對經濟、安全等 等因素非常適合教學使用。</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-4"">
+    <div class="col-sm-4">
       <div class="motivation_box">
         <div class="enlarge">
           <img src="img/motivation2.png" style="height: 35px">
           <br><br>
           <h4>書本的知識怎麼以更有趣的方式呈現？</h4>
           <br>
-          <p>內容........................................內容........................................內容........................................</p>
+          <p>在兩次對學生和教育從業者的調查結果顯示，大多數受訪者表示： 如果價格合理且易於使用，學生和教師願意優先使用虛擬實境技術來提身學習效率，且覺得這是更有趣的學習方式。</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-4"">
+    <div class="col-sm-4">
       <div class="motivation_box">
         <div class="enlarge">
           <img src="img/motivation3.png" style="height: 35px">
           <br><br>
           <h4>如何與看不到的分子模型進行互動？</h4>
           <br>
-          <p>內容........................................內容........................................內容........................................</p>
+          <p>由於化學實驗中無法以肉眼觀察元素分子的組成，而 VR Chemistry Laboratory 的“微觀分子實驗室”模式將可以補足實體實驗室的缺憾，由最一開始的原子結構，讓使用者以原子拆解的形式進行元素的組 合，而最終型態將可進行化學實驗，</p>
         </div>
       </div>
     </div>
@@ -182,10 +223,11 @@ include("pdoInc.php");
 
 
   </div>
+  <br><br><br><br><br><br>
 </div>
 <!-- ======================//motivation====================== -->
 <!-- ======================situation====================== -->
-<div class="container text-center" id="index-situation">
+<!-- <div class="container text-center" id="index-situation">
   <br><br><br><br><br><br>
   <h2 class="index-title">現況</h2>
   <div class="row">
@@ -206,14 +248,15 @@ include("pdoInc.php");
   <p>hi</p>
   <p>hi</p>
   <br><br><br><br><br><br><br><br><br><br><br>
-</div>
+</div> -->
 
 
 <div class="container text-center" id="index-unity">
+<br><br><br>
   <h2 class="index-title">開發環境</h2>
-  <br>
+  <br><br>
   <div class="row">
-    <div class="col-sm-6" >
+    <div class="col-sm-6 cirle_in_black" >
       <div class="enlarge">
         <img src="img/unity.png" height="200px">
         <h5>Unity</h5>
@@ -236,6 +279,7 @@ include("pdoInc.php");
   <!-- 備用參考網址：http://www.htmleaf.com/jQuery/Accordion/201802234987.html -->
 <div class="team-section container text-center">
   <div class="inner-width">
+  	<br><br><br>
     <h2 class="index-title">團隊</h2>
     <br>
     <div class="pers">

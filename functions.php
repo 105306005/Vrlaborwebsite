@@ -152,6 +152,9 @@ include("pdoInc.php");
   </nav>
 <!-- ==========================================nav-bar==================================================-->
 
+<div class="text-center" id="function-logo">
+  <img src="img/function-1.png" alt="function-1" width="100%" height="100%">
+</div>
 <div class="container text-center">
   <br><br><br>
   <h2>VR Chemical Laboratory二大功能</h2>
