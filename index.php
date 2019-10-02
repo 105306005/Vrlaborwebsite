@@ -15,7 +15,7 @@ include("pdoInc.php");
     <link rel="stylesheet" type="text/css" href="styles/team.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap-expand.css">
- 
+
     <!-- js -->
     <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -136,7 +136,7 @@ include("pdoInc.php");
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
-  
+
 </div>
 
 <!-- ==============================//Carousel Example================================= -->
@@ -144,12 +144,13 @@ include("pdoInc.php");
 <!-- ======================introduction====================== -->
 <div class="container" id="index-introduction" style = "background-image: url(img/bglight.png); background-position: center center ;
  background-size: contain; background-repeat: no-repeat">
-	<br><br><br><br><br>
+	<br><br><br><br><br><br>
 	<div class="text-center big-title"> 革命，化學教育。 </div>
 	<br>
 	<h3 class="text-center index-title"> HTC Vive VR + 化學 + 教育 ＝ VR Chemistry Laboratory
 	</h3>
 	<br><br><br><br><br><br><br>
+
 	<!-- <div class="container"> -->
 </div>
 <div id="index-introduction-2" style="background:url(img/intro-1.png); background-position: center center ;background-size: 100%; height: 100%;  background-repeat: no-repeat">
@@ -157,21 +158,61 @@ include("pdoInc.php");
 	<br><br>
 	<div style="color: #00cc99">
     	<h3>&nbsp;&nbsp;&nbsp;&nbsp;特點1，利用VR設備進行化學實模擬</h3>
-    	
+
     </div>
-
-
-
   </div>
+</div>
+
+
+	<!-- <br><br><br><br><br><br><br> -->
+<div class="container">
+</div>
+<div style="color: #00cc99">
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;特點2，VR技術成熟，提高學習體驗</h3>
+  </div>
+<br><br>
+<div id="index-introduction-3" style="background:url(img/learning3.png); background-position: center center ;
+background-size: 80%; height: 80%;  background-repeat: no-repeat">
+	<!-- <img src="img/intronew.png" width="100%" height="100%" style= "text-align: center"> -->
+<br><br>
+  </div>
+</div>
 
 
 
-
-
-
-
+<div class="container">
+</div>
+<div style="color: #00cc99">
+<br><br>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;特點3，與看不到的 化學分子進行互動</h3></div>
+<div id="index-introduction-4" style="background:url(img/molecules.png); background-position: center center ;
+background-size: 80%; height: 80%;  background-repeat: no-repeat";>
 
 </div>
+</div>
+
+
+<!-- <div class="container"> -->
+<!-- </div> -->
+<!-- <div id="index-introduction-4" style="background:url(img/learning2.png); background-position: center center ; -->
+<!-- background-size: 85%; height: 85%;  background-repeat: no-repeat"> -->
+<!-- <img src="img/intronew.png" width="100%" height="100%" style= "text-align: center"> -->
+<!-- <br><br> -->
+<!-- <div style="color: #00cc99"> -->
+    <!-- <h3>&nbsp;&nbsp;&nbsp;&nbsp;特點4，即時操作提醒，減少安全疑慮</h3> -->
+
+  <!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
 
 <!-- ======================introduction====================== -->
 
@@ -180,7 +221,7 @@ include("pdoInc.php");
 
 <div class="container my-bg" id="index-motivation" style = "background-image: url(img/bglight.png); background-position: center center ;
  background-size: contain; background-repeat: no-repeat" >
- 
+
   <br><br><br><br><br><br>
 
   <h2 class="index-title">發想動機</h2>
@@ -271,6 +312,38 @@ include("pdoInc.php");
   </div>
   <br><br>
 </div>
+
+
+
+
+<!--================================//Image Showcases===============================  -->
+<section class="showcase">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Fully Responsive Design</h2>
+        <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2>Updated For Bootstrap 4</h2>
+        <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Easy to Use &amp; Customize</h2>
+        <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ======================//situation====================== -->
 

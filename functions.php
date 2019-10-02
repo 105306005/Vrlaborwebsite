@@ -155,6 +155,20 @@ include("pdoInc.php");
 <div class="text-center" id="function-logo">
   <img src="img/function-1.png" alt="function-1" width="100%" height="100%">
 </div>
+<div id="functions" style="background:url(img/twofunctionblack.png); background-position: center center ;
+background-size: 105%; height: 105%;  background-repeat: no-repeat">
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 <div class="container text-center">
   <br><br><br>
   <h2>VR Chemical Laboratory二大功能</h2>
